@@ -11,7 +11,7 @@ setup(
     description="用于获取当前用户的经纬度位置信息的命令行工具",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/zhangzimin/geo-location",
+    url="https://github.com/zhangzimin/whereami",
     packages=find_packages(),
     license="MIT",
     classifiers=[
@@ -26,7 +26,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "whereami=get_location:get_current_location",
+            "whereami=whereami_cli.location:get_current_location",
         ],
     },
 ) 
