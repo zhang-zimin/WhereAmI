@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="whereami-cli",
-    version="0.1.0",
+    version="0.1.1",
     author="ZhangZimin",
     author_email="641945043@qq.com",
     description="用于获取当前用户的经纬度位置信息的命令行工具",
