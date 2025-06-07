@@ -13,8 +13,8 @@ pip install whereami-cli
 1. 确保您已安装Python 3.6或更高版本
 2. 克隆仓库：
 ```bash
-git clone https://github.com/zhangzimin/geo-location.git
-cd geo-location
+git clone https://github.com/zhangzimin/whereami.git
+cd whereami
 ```
 3. 安装依赖：
 ```bash
@@ -30,7 +30,20 @@ whereami
 
 或者运行Python脚本：
 ```bash
-python get_location.py
+python -m whereami_cli
+```
+
+## 项目结构
+```
+whereami/
+├── whereami_cli/           # 主包目录
+│   ├── __init__.py        # 包初始化文件
+│   └── location.py        # 位置获取核心代码
+├── setup.py               # 包安装配置
+├── pyproject.toml         # 构建系统配置
+├── requirements.txt       # 项目依赖
+├── README.md             # 项目文档
+└── LICENSE               # MIT许可证
 ```
 
 ## 输出示例
